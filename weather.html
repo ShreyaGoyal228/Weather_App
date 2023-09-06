@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main-div">
+        <div class="inner-div" data-tilt data-tilt-full-page-listening data-tilt-max="25" data-tilt-reverse="true">
+                <div class="search-div">
+                     <input type="text" placeholder="Search location here..." class="search-box"> 
+                     <button class=" fa fa-search" id="search-btn"></button>
+                </div>
+                 <div class="loc-not-found">
+                    <h1>Oops!! Location Not Found</h1>
+                     <img src="pics/404.png" alt="Not Found"> 
+                </div> 
+                <div class="weather-div">
+                     <img src="pics/cloud.png" alt="cloud-sum-image" class="weather-img">
+                <div class="weather-box">
+                    <p class="temp">0<sup>°C</sup></p>
+                    <p class="text">Scattered Clouds</p>
+                </div>
+                <div class="weather-details">
+                    <div class="humidity">
+                        <div class="text">
+                          <span id="humidity">51%</span>
+                           <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind-speed">
+                         <!-- <i class='fa fa-wind'></i>  -->
+                        <div class="text">
+                            <span id="wind">4.6Km/H</span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </div>
+    <script src="weather.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</body>
+</html>
+
+<!-- https://github.com/CodeTraversal/JavaScript-Projects/blob/main/Weather%20App/assets/cloud.png?raw=true -->
